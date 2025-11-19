@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Domained</title>
+</head>
+
+<body>
+
+<h1>The 39 Steps (1935)</h1>
+<iframe style="border:1px #FFFFFF none" src="https://www.yourupload.com/embed/o70iOXLrmg8w" title="Domained" width="1135px" height="637px" scrolling="no" frameborder="no" allow="fullscreen"></iframe>
+<p>
+</p>
+      <textarea id="textToCopy" readonly>
+<iframe style="border:1px #FFFFFF none" src="https://www.yourupload.com/embed/o70iOXLrmg8w" title="Domained" width="1135px" height="637px" scrolling="no" frameborder="no" allow="fullscreen"></iframe>
+    </textarea>
+      <button onclick="copyText()">Embed to Your Website</button>
+    <p id="copyMessage">Embed code copied!</p>
+  </main>
+<p>
+© Domained
+</p>
+    <script>
+    function copyText() {
+      const textArea = document.getElementById("textToCopy");
+      textArea.select();
+      textArea.setSelectionRange(0, 99999);
+
+      navigator.clipboard.writeText(textArea.value).then(() => {
+        const message = document.getElementById("copyMessage");
+        message.style.display = "block";
+        setTimeout(() => message.style.display = "none", 2000);
+      }).catch(err => console.error("Copy failed: ", err));
+    }
+  </script>
+</body>
+</html>
