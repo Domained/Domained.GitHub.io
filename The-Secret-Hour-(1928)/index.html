@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Domained</title>
+</head>
+
+<body>
+
+<h1>The Secret Hour (1928)</h1>
+  <p>Sorry, but this film is lost. There are only clips online that plays SOME parts of the film. The full film will sadly never be found. :(</p>
+<p>
+© Domained
+</p>
+    <script>
+    function copyText() {
+      const textArea = document.getElementById("textToCopy");
+      textArea.select();
+      textArea.setSelectionRange(0, 99999);
+
+      navigator.clipboard.writeText(textArea.value).then(() => {
+        const message = document.getElementById("copyMessage");
+        message.style.display = "block";
+        setTimeout(() => message.style.display = "none", 2000);
+      }).catch(err => console.error("Copy failed: ", err));
+    }
+  </script>
+</body>
+</html>
